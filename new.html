@@ -1,0 +1,36 @@
+
+package ltiM;
+
+public class TestArray2 {
+	
+	
+	public static int search(int arr[], int x)
+	{
+		int N = arr.length;
+		for(int i=0;i<N;i++)
+		{
+			if(arr[i]==x)
+				return i;
+			
+		}
+		return -1;
+	}
+	
+		
+	
+
+	public static void main(String[] args) {
+	
+		 int arr[] = {1,2,3,4,5,10,56};
+		 int x=10;
+		 
+		 int result= search(arr, x);
+		 if(result == -1)
+		 System.out.print("the element is not present in array");
+		 
+		 else
+			 System.out.print(result + ": element present in array");
+		
+	
+}
+}
